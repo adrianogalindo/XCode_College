@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6283BB7921A792B600ABA51B /* Acceuil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283BB7821A792B600ABA51B /* Acceuil.swift */; };
 		62E75B07219E340200E0CE60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E75B06219E340200E0CE60 /* AppDelegate.swift */; };
 		62E75B09219E340200E0CE60 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E75B08219E340200E0CE60 /* HomeScreenViewController.swift */; };
 		62E75B0C219E340200E0CE60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62E75B0A219E340200E0CE60 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6283BB7821A792B600ABA51B /* Acceuil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acceuil.swift; sourceTree = "<group>"; };
 		62E75B03219E340200E0CE60 /* AdrianoGalindoTPAutomne2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianoGalindoTPAutomne2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62E75B06219E340200E0CE60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62E75B08219E340200E0CE60 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				62E75B06219E340200E0CE60 /* AppDelegate.swift */,
 				62E75B08219E340200E0CE60 /* HomeScreenViewController.swift */,
+				6283BB7821A792B600ABA51B /* Acceuil.swift */,
 				62E75B0A219E340200E0CE60 /* Main.storyboard */,
 				62E75B0D219E340C00E0CE60 /* Assets.xcassets */,
 				62E75B0F219E340C00E0CE60 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62E75B09219E340200E0CE60 /* HomeScreenViewController.swift in Sources */,
+				6283BB7921A792B600ABA51B /* Acceuil.swift in Sources */,
 				62E75B07219E340200E0CE60 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
