@@ -1,15 +1,14 @@
 //
-//  Acceuil.swift
+//  ExerciceProposee.swift
 //  AdrianoGalindoTPAutomne2018
 //
-//  Created by Galindo on 2018-11-22.
+//  Created by Galindo on 2018-11-29.
 //  Copyright © 2018 Adriano Galindo. All rights reserved.
 //
 
-
 import UIKit
 
-class Acceuil: UIViewController {
+class ExerciceProposee: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,4 +17,3 @@ class Acceuil: UIViewController {
     
     
 }
-
