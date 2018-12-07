@@ -2,34 +2,17 @@
 //  ExerciceProposeeTableViewController.swift
 //  AdrianoGalindoTPAutomne2018
 //
-//  Created by Galindo on 2018-11-29.
+//  Created by Adriano Galindo on 06/12/18.
 //  Copyright © 2018 Adriano Galindo. All rights reserved.
 //
 
 import UIKit
 
-class ExerciceProposeeTableViewController: UITableViewController {
-
-
+class ExerciceProposeeTableViewController: UIViewController {
+    var dataDic = [String: String]()
+    var images = [UIImage]()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
         
     }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-
-        return UITableViewCell()
-        
-    }
-
 }

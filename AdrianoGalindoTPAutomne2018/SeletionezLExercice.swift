@@ -5,8 +5,6 @@
 //  Created by Galindo on 2018-11-22.
 //  Copyright © 2018 Adriano Galindo. All rights reserved.
 //
-
-
 import UIKit
 
 class SeletionezLExercice: UIViewController {
@@ -22,6 +20,8 @@ class SeletionezLExercice: UIViewController {
     
     @IBOutlet weak var tempsSeanceLabelInput: UILabel!
     @IBOutlet weak var tempsSeanceTextFieldInput: UITextField!
+    
+    var selectedExoDic = [String: String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +51,44 @@ class SeletionezLExercice: UIViewController {
         tempsSeanceTextFieldInput.text = "0"
         tempsSeanceTextFieldInput.delegate = self
     }
+
+
+func buildData() {
+    guard let serieValue01 = nbSeriesTextFieldInput.text else {return}
+    selectedExoDic["Nombre de Séries"] = serieValue01
+    
+    guard let serieValue02 = nbRepetitionsTextFieldInput.text else {return}
+        selectedExoDic["Nombre de Répétions"] = serieValue02
+    
+    guard let serieValue03 = poidsTextFieldInput.text else {return}
+    selectedExoDic["Poids (kg)"] = serieValue03
+    
+    guard let serieValue04 = tempsSeanceTextFieldInput.text else {return}
+    selectedExoDic["Temps de la séance"] = serieValue04
+    
 }
+    
+
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {
+            return
+        }
+        
+        if identifier == "goExerciceProposee" {
+            guard let destinationVc = segue.destination as? ExerciceProposeeTableViewController else {return}
+            destinationVc.dataDic = selectedExoDic
+        }
+    }
+    
+    @IBAction func goActionButton(_ sender: UIButton) {
+        buildData()
+    }
+
+}
+
 extension SeletionezLExercice: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -59,4 +96,6 @@ extension SeletionezLExercice: UITextFieldDelegate {
         return true
     }
 }
+
+
 
