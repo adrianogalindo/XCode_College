@@ -55,10 +55,10 @@ class SeletionezLExercice: UIViewController {
 
 func buildData() {
     guard let serieValue01 = nbSeriesTextFieldInput.text else {return}
-    selectedExoDic["Nombre de Séries"] = serieValue01
+    selectedExoDic["Nb de Séries"] = serieValue01
     
     guard let serieValue02 = nbRepetitionsTextFieldInput.text else {return}
-        selectedExoDic["Nombre de Répétions"] = serieValue02
+    selectedExoDic["Nb de Réepétions"] = serieValue02
     
     guard let serieValue03 = poidsTextFieldInput.text else {return}
     selectedExoDic["Poids (kg)"] = serieValue03
@@ -82,7 +82,7 @@ func buildData() {
             destinationVc.dataDic = selectedExoDic
         }
     }
-    
+
     @IBAction func goActionButton(_ sender: UIButton) {
         buildData()
     }
@@ -90,7 +90,6 @@ func buildData() {
 }
 
 extension SeletionezLExercice: UITextFieldDelegate {
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
